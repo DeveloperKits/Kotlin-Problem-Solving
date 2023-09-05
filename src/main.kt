@@ -11,6 +11,9 @@ fun main(){
     print("Enter boolean value: ")
     val isEven = read.nextBoolean()
 
+    val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
+    val numberStrings = numbers.filter { it % 2 == 0 }.map { "Number $it" }
+    println("Number $numberStrings")
     listsOne[1] = 11
 
     when {
@@ -31,8 +34,28 @@ fun main(){
 
     for (i in listsTwo){
         print("$i, ")
+<<<<<<< Updated upstream
     }*/
 
     val obj = longest_Substring_Without_Repeating_Characters()
     println(obj.lengthOfLongestSubstring("p"))
+=======
+    }
+
+    val array = intArrayOf(20, 15, 10)
+    val max = getMax(*array)
+    println("\nMaximum number $max")
+}
+
+fun getMax (vararg number: Int) : Int{
+    var max = number[0]
+
+    for (num in number){
+        if (num > max) {
+            max = num
+        }
+    }
+
+    return max
+>>>>>>> Stashed changes
 }
