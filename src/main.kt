@@ -1,7 +1,7 @@
 import java.util.Scanner
 
 fun main(){
-    // add 2 with given number
+    /*// add 2 with given number
     fun addTwo(x:Int) = x+2
 
     var listsOne = mutableListOf(1,3,5,7)
@@ -31,5 +31,8 @@ fun main(){
 
     for (i in listsTwo){
         print("$i, ")
-    }
+    }*/
+
+    val obj = longest_Substring_Without_Repeating_Characters()
+    println(obj.lengthOfLongestSubstring("p"))
 }
